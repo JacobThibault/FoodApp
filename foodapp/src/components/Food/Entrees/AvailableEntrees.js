@@ -36,7 +36,7 @@ const AvailableEntrees = () => {
         <section className={classes.entrees}>
             <Card>
                 {/*consider replacing the paragraph tag with another component, tried before but ran into overlapping
-                //tried copying the Summary component but wasn't working.*/}
+                 tried copying the Summary component but wasn't working.*/}
                 <p>Entrees: </p>
                 <ul> {entreeList} </ul>
             </Card>
