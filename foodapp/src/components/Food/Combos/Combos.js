@@ -1,4 +1,4 @@
-import ComboSummary from './ComboSummary';
+import CombosSummary from './CombosSummary';
 import AvailableCombos from "./AvailableCombos";
 
 import {Fragment} from 'react';
@@ -6,7 +6,6 @@ import {Fragment} from 'react';
 
 const Combos = () => {
     return <Fragment>
-        <ComboSummary />
         <AvailableCombos />
     </Fragment>
 
