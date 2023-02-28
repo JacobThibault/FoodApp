@@ -6,6 +6,7 @@ import {Fragment} from 'react';
 
 const Combos = () => {
     return <Fragment>
+        <CombosSummary/>
         <AvailableCombos />
     </Fragment>
 
