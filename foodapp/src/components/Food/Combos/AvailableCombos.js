@@ -6,26 +6,26 @@ const DUMMY_MEALS = [
     {
         id: 'comb1',
         name: 'Pizza',
-        description: 'Fresh Pizza with Pepperoni w/ side and drink',
-        price: 199.99,
+        description: 'Fresh Pizza with Pepperoni.',
+        price: 15.99,
     },
     {
         id: 'comb2',
         name: 'Dozen Wings',
-        description: 'Tossed with Medium Sauce w/ side and drink',
-        price: 19.99,
+        description: 'Tossed with Medium Sauce',
+        price: 13.99,
     },
     {
         id: 'comb3',
         name: 'Cheese Burger',
-        description: 'American, raw, meaty w/ side and drink',
-        price: 19.99,
+        description: 'American, raw, meaty',
+        price: 9.99,
     },
     {
         id: 'comb4',
         name: 'Chick Fingers',
-        description: 'Five Hand Breaded Chicken Fingers w/ side and drink',
-        price: 19.99,
+        description: 'Five Hand Breaded Chicken Fingers',
+        price: 12.99,
     },
 ];
 
@@ -35,9 +35,6 @@ const AvailableCombos = () => {
     return (
         <section className={classes.combos}>
             <Card>
-                {/*consider replacing the paragraph tag with another component, tried before but ran into overlapping
-                //tried copying the Summary component but wasn't working.*/}
-                <p>Combos: </p>
                 <ul> {comboList} </ul>
             </Card>
         </section>

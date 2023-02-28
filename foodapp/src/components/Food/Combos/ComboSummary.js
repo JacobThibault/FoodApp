@@ -1,5 +1,5 @@
 import classes from './CombosSummary.module.css'
-const CombosSummary = () =>{
+const ComboSummary = () =>{
     return (
     <section className={classes.summary}>
         <h2>Yummy Food, Brought to you on Brockport Campus!</h2>
@@ -15,4 +15,4 @@ const CombosSummary = () =>{
     );
 };
 
-export default CombosSummary;
+export default ComboSummary;
