@@ -1,6 +1,7 @@
 
+import ComboItem from '../ComboItem/ComboItem';
 import classes from './AvailableCombos.module.css';
-import Card from '../../UI/Card';
+import Card from '../../../UI/Card';
 //Create dummy data here but can eventually replace this with data from database.
 const DUMMY_MEALS = [
     {
@@ -30,11 +31,22 @@ const DUMMY_MEALS = [
 ];
 
 const AvailableCombos = () => {
-    const comboList = DUMMY_MEALS.map(combo => <li>{combo.name}</li>);
+    const comboList = DUMMY_MEALS.map(combo =>
+        <ComboItem
+            id={combo.id} //added to help with individual increasing compatibility.
+            key={combo.id}
+            name={combo.name}
+            description={combo.description}
+            price={combo.price}
+        />
+    );
 
     return (
         <section className={classes.combos}>
             <Card>
+                {/*consider replacing the paragraph tag with another component, tried before but ran into overlapping
+                //tried copying the Summary component but wasn't working.*/}
+                <p>Combos: </p>
                 <ul> {comboList} </ul>
             </Card>
         </section>

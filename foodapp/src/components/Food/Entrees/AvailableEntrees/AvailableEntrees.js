@@ -1,6 +1,8 @@
 
 import classes from './AvailableEntrees.module.css';
-import Card from '../../UI/Card';
+import Card from '../../../UI/Card';
+import ComboItem from "../../Combos/ComboItem/ComboItem";
+import EntreeItem from "../EntreeItem/EntreeItem";
 //Create dummy data here but can eventually replace this with data from database.
 const DUMMY_ENTREES = [
     {
@@ -30,7 +32,14 @@ const DUMMY_ENTREES = [
 ];
 
 const AvailableEntrees = () => {
-    const entreeList = DUMMY_ENTREES.map(entree => <li>{entree.name}</li>);
+    const entreeList = DUMMY_ENTREES.map(entree =>
+        <EntreeItem
+        key={entree.id}
+        name={entree.name}
+        description={entree.description}
+        price={entree.price}
+        />
+    );
 
     return (
         <section className={classes.entrees}>
